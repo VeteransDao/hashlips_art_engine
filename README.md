@@ -1,3 +1,15 @@
+# Fork of HashLips Art Engine 👄
+
+Crafting the art engine for DAO specific use cases with the goal of making it avaiable as a Dapp.
+
+Initial Use Cases:
+
+1. Award NFTs
+2. Membership NFTs
+3. Unit Swag NFTs
+4. Historic Event NFTs
+5. Military Weapons NFTs
+
 # Welcome to HashLips 👄
 
 ![](https://github.com/HashLips/hashlips_art_engine/blob/main/logo.png)
@@ -55,13 +67,13 @@ const layerConfigurations = [
   {
     growEditionSizeTo: 100,
     layersOrder: [
-      { name: "Head" },
-      { name: "Mouth" },
-      { name: "Eyes" },
-      { name: "Eyeswear" },
-      { name: "Headwear" },
-    ],
-  },
+      { name: 'Head' },
+      { name: 'Mouth' },
+      { name: 'Eyes' },
+      { name: 'Eyeswear' },
+      { name: 'Headwear' }
+    ]
+  }
 ];
 ```
 
@@ -77,27 +89,27 @@ const layerConfigurations = [
     // Creates up to 50 artworks
     growEditionSizeTo: 50,
     layersOrder: [
-      { name: "Background" },
-      { name: "Head" },
-      { name: "Mouth" },
-      { name: "Eyes" },
-      { name: "Eyeswear" },
-      { name: "Headwear" },
-    ],
+      { name: 'Background' },
+      { name: 'Head' },
+      { name: 'Mouth' },
+      { name: 'Eyes' },
+      { name: 'Eyeswear' },
+      { name: 'Headwear' }
+    ]
   },
   {
     // Creates an additional 100 artworks
     growEditionSizeTo: 150,
     layersOrder: [
-      { name: "Background" },
-      { name: "Head" },
-      { name: "Eyes" },
-      { name: "Mouth" },
-      { name: "Eyeswear" },
-      { name: "Headwear" },
-      { name: "AlienHeadwear" },
-    ],
-  },
+      { name: 'Background' },
+      { name: 'Head' },
+      { name: 'Eyes' },
+      { name: 'Mouth' },
+      { name: 'Eyeswear' },
+      { name: 'Headwear' },
+      { name: 'AlienHeadwear' }
+    ]
+  }
 ];
 ```
 
@@ -149,32 +161,32 @@ Here is a list of the different blending modes that you can optionally use.
 
 ```js
 const MODE = {
-  sourceOver: "source-over",
-  sourceIn: "source-in",
-  sourceOut: "source-out",
-  sourceAtop: "source-out",
-  destinationOver: "destination-over",
-  destinationIn: "destination-in",
-  destinationOut: "destination-out",
-  destinationAtop: "destination-atop",
-  lighter: "lighter",
-  copy: "copy",
-  xor: "xor",
-  multiply: "multiply",
-  screen: "screen",
-  overlay: "overlay",
-  darken: "darken",
-  lighten: "lighten",
-  colorDodge: "color-dodge",
-  colorBurn: "color-burn",
-  hardLight: "hard-light",
-  softLight: "soft-light",
-  difference: "difference",
-  exclusion: "exclusion",
-  hue: "hue",
-  saturation: "saturation",
-  color: "color",
-  luminosity: "luminosity",
+  sourceOver: 'source-over',
+  sourceIn: 'source-in',
+  sourceOut: 'source-out',
+  sourceAtop: 'source-out',
+  destinationOver: 'destination-over',
+  destinationIn: 'destination-in',
+  destinationOut: 'destination-out',
+  destinationAtop: 'destination-atop',
+  lighter: 'lighter',
+  copy: 'copy',
+  xor: 'xor',
+  multiply: 'multiply',
+  screen: 'screen',
+  overlay: 'overlay',
+  darken: 'darken',
+  lighten: 'lighten',
+  colorDodge: 'color-dodge',
+  colorBurn: 'color-burn',
+  hardLight: 'hard-light',
+  softLight: 'soft-light',
+  difference: 'difference',
+  exclusion: 'exclusion',
+  hue: 'hue',
+  saturation: 'saturation',
+  color: 'color',
+  luminosity: 'luminosity'
 };
 ```
 
@@ -217,7 +229,7 @@ You can also add extra metadata to each metadata file by adding your extra items
 
 ```js
 const extraMetadata = {
-  creator: "Daniel Eugene Botha",
+  creator: 'Daniel Eugene Botha'
 };
 ```
 
@@ -262,7 +274,7 @@ If you want to change the ratio of the pixelation then you can update the ratio 
 
 ```js
 const pixelFormat = {
-  ratio: 5 / 128,
+  ratio: 5 / 128
 };
 ```
 
@@ -277,7 +289,7 @@ const gif = {
   export: true,
   repeat: 0,
   quality: 100,
-  delay: 500,
+  delay: 500
 };
 ```
 
